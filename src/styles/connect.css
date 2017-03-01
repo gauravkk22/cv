@@ -1,0 +1,92 @@
+.connect_wrapper{
+  width:100%;
+  /*height:25rem;*/
+  background:#6a234d ;
+  position: relative;
+  color:white;
+  z-index:5;
+}
+
+.connect_wrapper:after{
+  content:'';
+  width:2rem;
+  height:2rem;
+  transform: rotate(45deg);
+  background: #6a234d;
+  position: absolute;
+  bottom: -1rem;
+  left: 10%;
+  cursor: pointer;
+}
+
+.connect_wrapper:before{
+  content:'';
+  width:100%;
+  height:.4rem;
+  background: rgba(48, 48, 48,0.2);
+  position: absolute;
+  bottom: -0.4rem;
+  left:0px;
+}
+
+.connect_header{
+  height:10rem;
+  width:100%;
+  font-family: 'Monoton', cursive;
+  font-size: 2rem;
+  color:white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  word-spacing: 1rem;
+}
+
+.connect_body{
+  width:100%;
+  height:15rem;
+  display:flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.gmail{
+  position: relative;
+  width: 6%;
+  height: 5rem;
+  display:flex;
+  background: url('../images/gmail.png');
+  background-size: 4rem;
+  background-repeat: no-repeat;
+  margin: 0rem 3rem;
+}
+.facebook{
+  position: relative;
+  width: 6%;
+  height: 5rem;
+  display:flex;
+  background: url('../images/facebook.png');
+  background-size: 4rem;
+  background-repeat: no-repeat;
+  margin: 0rem 3rem;
+}
+.linkedin{
+  position: relative;
+  width: 6%;
+  height: 5rem;
+  display:flex;
+  background: url('../images/linkedin.png');
+  background-size: 4rem;
+  background-repeat: no-repeat;
+  margin: 0rem 3rem;
+}
+.github{
+  position: relative;
+  width: 6%;
+  height: 5rem;
+  display:flex;
+  background: url('../images/github.png');
+  background-size: 4rem;
+  background-repeat: no-repeat;
+  margin: 0rem 3rem;
+  cursor:pointer;
+}

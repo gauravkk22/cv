@@ -1,0 +1,174 @@
+/*font-family: 'Barrio', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Antic Slab', serif;
+font-family: 'Bitter', serif;
+font-family: 'Crimson Text', serif;
+font-family: 'Damion', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Kristi', cursive;
+font-family: 'Playball', cursive;
+font-family: 'Titillium Web', sans-serif;
+*/
+
+.App{
+  width:100%;
+  height:auto;
+  font-size: 1.4rem;
+  position: relative;
+  top:-0.6rem;
+}
+
+.header{
+  position:relative;
+  width:100%;
+  /*height:15rem;*/
+  background:#303030 ;
+  text-align: center;
+  color: #ffffff;
+  z-index: 10;
+  /*border-bottom: 3px solid rgba(48, 48, 48,0.2);*/
+}
+
+.header:after{
+  content:'';
+  width:2rem;
+  height:2rem;
+  transform: rotate(45deg);
+  background: #303030;
+  position: absolute;
+  bottom: -1rem;
+  left: 10%;
+  cursor: pointer;
+}
+
+.header:before{
+  content:'';
+  width:100%;
+  height:.4rem;
+  background: rgba(48, 48, 48,0.2);
+  position: absolute;
+  bottom: -0.4rem;
+  left:0px;
+}
+
+.header:after:hover{
+  animation: tabhover 1s ease-in-out;
+}
+
+@@keyframes tabhover {
+  0%{width:2.0;bottom:-1.0rem;}
+  20%{width:2.2;bottom:-1.1rem;}
+  40%{width:2.4;bottom:-1.2rem;}
+  60%{width:2.6;bottom:-1.3rem;}
+  80%{width:2.8;bottom:-1.4rem;}
+  100%{width:3.0;bottom:-1.5rem;}
+}
+.user_image{
+  position: absolute;
+  height: 7rem;
+  width: 7rem;
+  left: 46%;
+  z-index: 11;
+  top: 7%;
+  background: url('../images/Gaurav.jpg');
+  border-radius: 50%;
+  background-size: cover;
+}
+.user_image:hover{
+  opacity:1.0;
+  animation : hover 1s ease-in-out;
+  width: 15rem;
+  height:15rem;
+  left:40%;
+}
+
+@@keyframes hover {
+  0%{ opacity: 0.0}
+  20%{ opacity: 0.2}
+  40%{ opacity: 0.4}
+  60%{ opacity: 0.6}
+  80%{ opacity: 0.8}
+  100%{ opacity: 1.0}
+}
+
+.description_text{
+  display:inline-flex;
+  height:15rem;
+  width:100%;
+  margin:0px;
+}
+
+.left_text{
+  width:45%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text_one{
+  font-family: 'Barrio', cursive;
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+}
+
+.my_name{
+  font-family: 'Lobster', cursive;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  letter-spacing: 8px;
+  color:#ffc107;
+}
+
+.center_text{
+  width:10%;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  text-align: center
+}
+
+.right_text{
+  width:45%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.text_two{
+  font-family: 'Barrio', cursive;
+  font-size: 3rem;
+}
+
+.text_three{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  font-weight: bolder;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+}
+
+.webdeveloper_text{
+  color: green;
+}
+
+.Typist .Cursor--blinking {
+  opacity: 1;
+  animation: blink 1s linear infinite;
+  font-size: 3rem;
+  color:red;
+  margin-bottom:1rem;
+  vertical-align: super;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
